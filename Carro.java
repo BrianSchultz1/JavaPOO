@@ -1,25 +1,50 @@
-package packageunivers.javacore.Aintroducaoclasses.dominio;
+import java.util.Random;
 
 public class Carro {
-    public String nome;
-    public String modelo;
-    private int ano;
+	private int velocidade = 0;
+	private int distancia = 0;
+	private int distanciaMaxima = 10;
+	private char nomeDoCarro;
 
-    public boolean correndo;
+	public int sortearVelocidade() {
+		Random random = new Random();
+		int velocidade = random.nextInt(2) + 1;
+		return velocidade;
+	}
 
-    public void status() {
-        System.out.println("nome" + this.nome);
-        System.out.println("nome" + this.modelo);
-        System.out.println("nome" + this.ano);
-        System.out.println("nome" + this.correndo);
-    }
+	public void calcularDistancia(int velocidade) {
+		this.distancia += velocidade;
+	}
 
-    public void correr() {
-        if (this.correndo == true) {
-            System.out.println(" carro correndo");
-        } else {
-            System.out.println("carro não correndo");
-        }
-    }
-
+	public boolean verificarVencedor() {
+		if (this.distancia >= this.distanciaMaxima) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	public int getDistancia() {
+		return distancia;
+	}
+	public void setDistancia(int distancia) {
+		this.distancia = distancia;
+	}
+	public int getDistanciaMaxima() {
+		return this.distanciaMaxima;
+	}
+	public void setDistanciaMaxima(int distanciaMaxima) {
+		this.distanciaMaxima = distanciaMaxima;
+	}
+	public char getNomeDoCarro() {
+		return this.nomeDoCarro;
+	}
+	public void setNomeDoCarro(char nomeDoCarro) {
+		this.nomeDoCarro = nomeDoCarro;
+	}
+	public int getVelocidade() {
+		return this.velocidade;
+	}
+	public void setVelocidade(int velocidade) {
+		this.velocidade = velocidade;
+	}
 }
