@@ -15,7 +15,7 @@ public class Caneta {
         System.out.println("carga: " + this.carga);
         System.out.println("está tampada? " + this.tampada);
     }
-
+ 
     //método
     public void rabiscar() {
         if (this.tampada == true) {
