@@ -3,7 +3,7 @@ package packageunivers.javacore.Aintroducaoclasses.dominio;
 public class Inscrito extends Pessoa {
     private String login;
     private int totAssistindo;
-
+ 
     public Inscrito(String nome, int idade, String sexo, float experiencia, String login) {
         super(nome, idade, sexo, experiencia);
         this.login = login;
