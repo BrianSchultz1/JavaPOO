@@ -7,7 +7,7 @@ public class Corrida {
 
         boolean fimcorrida1 = false;
         boolean fimcorrida2 = false;
-
+ 
         do {
             c1.setNomeDoCarro("Mercedes");
             int velocidade1 = c1.sortearVelocidade();
