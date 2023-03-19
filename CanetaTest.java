@@ -18,4 +18,4 @@ public class CanetaTest {
 //        c1.status();
 //        System.out.println("tenho uma caneta " + c1.getModelo() + " de ponta " + c1.getPonta());
     }
-}
+} 
