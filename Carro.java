@@ -2,7 +2,6 @@ package provas.trabalhopoo;
 
 import java.util.Random;
 
-
 public class Carro {
     private int velocidade = 0;
     private int distancia = 0;
