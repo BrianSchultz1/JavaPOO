@@ -5,3 +5,4 @@ public class Corinthians extends Torcedor {
         System.out.println("Dale corinthians");
     }
 }
+ 
