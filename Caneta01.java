@@ -8,7 +8,7 @@ public class Caneta01 {
     private float ponta;
 
 
-    public Caneta01(String m, String c, float p) {
+    public Caneta01(String m, String c, float p) { 
 //        este é o metodo construtor
         this.modelo = m;
         this.cor = c;
